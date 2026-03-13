@@ -76,7 +76,7 @@ def generate_launch_description():
                    '-R', '0.0',
                    '-P', '0.0',
                    '-Y', '0.0',
-                   "-name", "ant_robot"],
+                   "-name", "tugbot"],
     )
 
     gz_ros2_bridge = Node(
