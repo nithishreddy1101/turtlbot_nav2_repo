@@ -21,7 +21,7 @@ def generate_launch_description():
     turtlebot_description = get_package_share_directory('turtlebot_description')
 
     model_arg = DeclareLaunchArgument(name="model", default_value=os.path.join(
-                                        turtlebot_description, "urdf", "turtlebot3_burger.urdf"
+                                        turtlebot_description, "urdf", "turtlebot3_burger.urdf.xacro"
                                         ),
                                       description="Absolute path to robot urdf file"
     )

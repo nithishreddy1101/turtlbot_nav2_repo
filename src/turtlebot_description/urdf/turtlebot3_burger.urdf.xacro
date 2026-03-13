@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="turtlebot3_burger">
+
+  <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot3_burger.urdf"/>
+  <xacro:include filename="$(find turtlebot_description)/urdf/robot_gazebo.xacro"/>
+  <xacro:include filename="$(find turtlebot_description)/urdf/robot_ros2_control.xacro"/>
+  
+</robot>
