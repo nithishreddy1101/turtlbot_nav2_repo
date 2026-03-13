@@ -1,0 +1,27 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100 # Hz
+    use_sim_time: true
+
+    tugbot_controller:
+      type: diff_drive_controller/DiffDriveController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    simple_velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+
+tugbot_controller:
+  ros__parameters:
+    type        : diff_drive_controller/DiffDriveController
+    use_stamped_vel: true
+    left_wheel_names  : ['wheel_left_joint']
+    right_wheel_names : ['wheel_right_joint']
+
+simple_velocity_controller:
+  ros__parameters:
+    joints:
+      - wheel_left_joint
+      - wheel_right_joint
